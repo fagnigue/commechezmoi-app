@@ -1,0 +1,78 @@
+
+
+@media only screen and (min-width: 751px){
+	/* desktop and tablet device */
+
+	.titre {
+		font: italic 600 40px Times, Times New Roman, serif;
+	}
+
+	.login, .register, .profil {
+		font-weight: 600;
+	}
+
+	.container {
+		margin-top: 20px;
+		border-radius: 25px;
+	}
+
+	.search {
+		width: 100%;
+	}
+
+	.add {
+		float: right;
+	}
+
+	label {
+		font-style: italic;
+		font-weight: 600;
+	}
+
+	.choix {
+		float: right;
+	}
+
+	.about {
+		font-size: 12px;
+	}
+
+}
+
+
+@media only screen and (max-width: 750px){
+	/* Mobile device */
+
+	.titre {
+		font: italic 600 0.9em Times, Times New Roman, serif;
+	}
+
+	.login, .register, .profil {
+		font-weight: 600;
+	}
+
+	.container {
+		margin-top: 5px;
+		border-radius: 25px;
+	}
+
+	.search {
+		width: 100%;
+	}
+
+	label {
+		font-style: italic;
+		font-weight: 600;
+	}
+
+	.choix {
+		float: right;
+	}
+
+	.about {
+		font-size: 12px;
+	}
+
+	
+
+}

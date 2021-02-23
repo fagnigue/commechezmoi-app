@@ -1,0 +1,66 @@
+ 
+
+@media only screen and (min-width: 751px){
+	/* desktop and tablet device */
+
+	.home {
+		font: italic 600 40px Times, Times New Roman, serif;
+	}
+
+	.image {
+		width: 170px;
+		height: 170px;
+		background-color: white;
+		margin: 0 auto;
+	}
+
+	.cmd, .ann {
+		display: flex;
+	}
+
+	.commande-btn, .annonce-btn {
+		text-decoration: none;
+		font-weight: 600;
+		color: black;
+		font-style: italic;
+		margin: auto;
+	}
+
+	.modifier-btn {
+		float: right;
+		margin-top: 5px;
+	}
+
+
+}
+
+
+@media only screen and (max-width: 750px){
+	/* Mobile device */
+
+	.home {
+		font: italic 600 0.9em Times, Times New Roman, serif;
+	}
+
+	.image {
+		width: 170px;
+		height: 170px;
+		background-color: white;
+		margin: 0 auto;
+		margin-bottom: 5px;
+	}
+
+	.commande-btn, .annonce-btn {
+		text-decoration: none;
+		font-weight: 600;
+		color: black;
+		font-style: italic;
+	}
+
+	.modifier-btn {
+		float: right;
+		margin-top: 5px;
+	}
+
+
+}

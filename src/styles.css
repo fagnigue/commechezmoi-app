@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+
+@media only screen and (min-width: 751px){
+	/* desktop an tablet device */
+	body {
+		background-color: #f5f5f5;
+	}
+
+}
+
+@media only screen and (max-width: 750px){
+	/* Mobile divice */
+
+	body {
+		background-color: #ffffff;
+	}
+
+}

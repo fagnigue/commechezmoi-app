@@ -1,0 +1,83 @@
+<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light shadow-sm mb-3">
+  <div class="container-fluid">
+    <a class="navbar-brand home" href="/">CommeChezMoi</a>
+  </div>
+</nav>
+
+<div class="container shadow-lg p-3 mb-5 bg-body rounded">
+
+	<div><p class="titre">Titre de l'annonce</p></div>
+
+	<div class="row justify-content-center">
+		<div class="col-sm-4 col-md-4 col-xs-12">
+			<div class="image">
+				<img src="">
+			</div>
+		</div>
+	</div>
+
+	<div class="row justify-content-center">
+		<div class="col-sm-12 col-md-12 col-xs-12">
+			<div class="about">
+				<br>
+				<label>publiée par:</label><br>
+				<label><a class="auteur" (click)="open(content)">Auteur</a></label> le <label>JJ-MM-AAAA</label> à <label>hh:mm</label>
+			</div>
+		</div>
+	</div>
+
+	<div class="row justify-content-center">
+		<div class="col-sm-12 col-md-12 col-xs-12">
+			<div class="description">
+				<label>Description</label>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-sm-12 col-md-12 col-xs-12">
+			<button class="btn btn-outline-warning commander">commander</button>
+		</div>
+	</div>
+	
+	
+</div>
+
+
+<ng-template #content let-c="close" let-d="dismiss">
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Nom de la personne</h4>
+    <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+      <span aria-hidden="true">×</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    
+  	<div class="row">
+  		<div class="col-sm-4 col-md-4 col-xs-12">
+  			<div class="image border border-primary rounded-circle">
+				<img src="">
+			</div>
+  		</div>
+  	</div>
+
+  	<div class="row">
+  		<div class="col-sm-4 col-md-4 col-xs-12">
+  			<label>Profil: </label>
+  		</div>
+  	</div>
+
+  	<div class="row">
+  		<div class="col-sm-4 col-md-4 col-xs-12">
+  			<label>note: </label>
+  		</div>
+  	</div>
+
+  </div>
+</ng-template>

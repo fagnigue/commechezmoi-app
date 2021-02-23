@@ -1,0 +1,108 @@
+<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light shadow-sm mb-3">
+  <div class="container-fluid">
+    <a class="navbar-brand home" href="/">CommeChezMoi</a>
+  </div>
+</nav>
+
+<div class="container shadow-lg p-3 mb-5 bg-body rounded">
+	<div class="row">
+		<div class="col-sm-4 col-md-4 col-xs-12">
+			<button class="btn btn-outline-danger logout-btn">Deconnexion</button>
+			<div class="image border border-primary rounded-circle">
+				<img src="">
+			</div>
+		</div>
+		<div class="col-sm-4 col-md-2 col-xs-12 ann">
+			<a routerLink="/commandes" class="btn btn-outline-dark commande-btn">mes commandes</a>
+		</div>
+		<div class="col-sm-2 col-md-2 col-xs-12 cmd">
+			<a routerLink="/id/annonces" class="btn btn-outline-dark annonce-btn">mes annonces</a>
+		</div>
+		<div class="col-sm-2 col-md-2 col-xs-12 cmd">
+			<a routerLink="/id/annonces" class="btn btn-outline-dark annonce-btn">mes avis</a>
+		</div>
+		<div class="col-sm-2 col-md-2 col-xs-12 cmd">
+			<a routerLink="/id/annonces" class="btn btn-outline-dark annonce-btn">mes notes</a>
+		</div>
+	</div>
+	<hr>
+	<div class="row">
+		<div class="col-sm-12 col-md-12 col-xs-12">
+			<fieldset>
+				<legend>Informations générales</legend>
+				<form>
+					<div class="row">
+						<div class="col-sm-4 col-md-4 col-xs-12">
+							<label for="Nom" class="form-label">Nom:</label>
+							<input type="text" class="form-control" id="Nom">
+						</div>
+						<div class="col-sm-4 col-md-4 col-xs-12">
+							<label for="Prenom" class="form-label">Prenom:</label>
+							<input type="text" class="form-control" id="Prenom">
+						</div>
+						<div class="col-sm-4 col-md-4 col-xs-12">
+							<label for="Email" class="form-label">Email:</label>
+							<input type="email" class="form-control" id="Email">
+						</div>
+						<div class="col-sm-4 col-md-4 col-xs-12">
+							<label for="Password" class="form-label">Mot de passe</label>
+							<input type="password" class="form-control" id="Password">
+						</div>
+						<div class="col-sm-4 col-md-4 col-xs-12">
+							<label for="Telephone" class="form-label">Téléphone:</label>
+							<input type="text" class="form-control" id="Telephone">
+						</div>
+						<div class="col-sm-4 col-md-4 col-xs-12">
+							<label for="Adresse" class="form-label">Adresse:</label>
+							<input type="text" class="form-control" id="Adresse">
+						</div>
+						<div class="col-sm-4 col-md-4 col-xs-12">
+							<label for="Adresse" class="form-label">Adresse:</label>
+							<select class="form-select">
+								<option disabled selected>Choisissez votre profil</option>
+								<option value="cuistot">Cuistot</option>
+								<option value="client">Client</option>
+							</select>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<button class="btn btn-outline-success modifier-btn">Modifier</button>
+						</div>
+					</div>
+				</form>
+			</fieldset>
+		</div>
+	</div>
+<hr>
+	<div class="row">
+		<div class="col-sm-12 col-md-12 col-xs-12">
+			<fieldset>
+				<legend>Informations Supplémentaires</legend>
+				<form>
+					<div class="row">
+						<div class="col-sm-4 col-md-4 col-xs-12">
+							<label for="Ville" class="form-label">Ville:</label>
+							<input type="text" class="form-control" id="Ville">
+						</div>
+						<div class="col-sm-4 col-md-4 col-xs-12">
+							<label for="Quartier" class="form-label">Quartier:</label>
+							<input type="text" class="form-control" id="Quartier">
+						</div>
+						
+						
+					</div>
+					<div class="row">
+						<div class="col">
+							<button class="btn btn-outline-success modifier-btn">Modifier</button>
+						</div>
+					</div>
+				</form>
+			</fieldset>
+		</div>
+	</div>
+
+
+
+
+</div>
