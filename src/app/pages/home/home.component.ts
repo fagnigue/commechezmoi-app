@@ -31,7 +31,12 @@ export class HomeComponent implements OnInit {
 
   
   nextpage(){
-    this.route.navigate(['addnews']);
+    if(this.cookie == undefined) {
+      this.route.navigate(['login']);
+    } else {
+      this.route.navigate(['addnews']);
+    }
+    
   }
 
 
