@@ -2,6 +2,11 @@ import { Component, OnInit } from '@angular/core';
 
 import { NgbModalConfig, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
+import { CookieService } from 'ngx-cookie';
+
+import { Router } from '@angular/router';
+
+
 @Component({
   selector: 'app-service',
   templateUrl: './service.component.html',
@@ -9,7 +14,9 @@ import { NgbModalConfig, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 })
 export class ServiceComponent implements OnInit {
 
-  constructor(private modalService: NgbModal, config: NgbModalConfig) {
+  cookie = this.cookieService.get('infos');
+
+  constructor(private modalService: NgbModal, config: NgbModalConfig, private cookieService: CookieService, private route: Router) {
   	config.backdrop = 'static';
   	config.keyboard = false;
   }
@@ -20,5 +27,13 @@ export class ServiceComponent implements OnInit {
   open(content: any) {
     this.modalService.open(content);
    }
+
+  verif() {
+     if(this.cookie == undefined) {
+        this.route.navigate(['login']);
+     } else {
+       console.log('okay');
+     }
+  }
 
 }
