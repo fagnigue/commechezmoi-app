@@ -1,0 +1,37 @@
+<div class="container bg-body">
+
+	<p id="title"><a class="titre" routerLink="/">CommeChezMoi</a></p>
+
+  <form [formGroup]="addForm" (ngSubmit)="addnews()">
+    
+      <div class="mb-3 image justify-content-center">
+        <img [src]="url" width="200" height="200" *ngIf="url != ''">
+      </div>
+      <font size="4px" color="red" *ngIf="general_error != ''">{{ general_error }}</font>
+      <div class="mb-3">
+        <select class="form-select" aria-label="Default select example" formControlName="type">
+          <option selected disabled>Type d'annonce</option>
+          <option value="1">Demande de service</option>
+          <option value="2">Proposition de service</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="titre" class="col-form-label">Titre:</label>
+        <input type="text" class="form-control" id="titre" formControlName="titre">
+      </div>
+      <div class="mb-3">
+        <label for="file" class="col-form-label">Ajouter photo:</label> <font size="2px" color="red" *ngIf="photo_error != ''">{{ photo_error }}</font>
+        <input [writeFile]="true" type="file" class="form-control" formControlName="photo" (change)="readfile($event)">
+      </div>
+      <div class="mb-3">
+        <label for="message-text" class="col-form-label">Description:</label>
+        <textarea class="form-control" id="message-text" formControlName="description"></textarea>
+      </div>
+    
+
+    <button type="submit" class="btn btn-outline-dark send">Enregistrer</button>
+
+  </form>
+
+
+</div>

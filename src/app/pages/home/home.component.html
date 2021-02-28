@@ -12,10 +12,10 @@
       
       <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
 
-        <li class="nav-item login">
+        <li class="nav-item login" *ngIf="cookie == undefined">
           <a class="nav-link active" routerLink="/login">Connexion</a>
         </li>
-        <li class="nav-item register">
+        <li class="nav-item register" *ngIf="cookie == undefined">
           <a class="nav-link active" routerLink="/register">Inscription</a>
         </li>
         <li class="nav-item profil">
@@ -44,10 +44,8 @@
       <div class="col-sm-1 col-md-1">
         
         <div class="add">
-          <!--<button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#addanonce">
-            <fa-icon [icon]="faPlus"></fa-icon>
-          </button>-->
-          <button class="btn btn-outline-secondary" (click)="open(mymodal)">
+         
+          <button class="btn btn-outline-secondary" (click)=nextpage()>
             <fa-icon [icon]="faPlus"></fa-icon>
           </button>
         </div>
@@ -81,41 +79,4 @@
 
   </div>
 </section>
-
-
-  
-<ng-template #mymodal let-c="close" let-d="dismiss">
-  <div class="modal-header">
-    <h4 class="modal-title" id="modal-basic-title">Nouvelle annonce</h4>
-    <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
-      <span aria-hidden="true">×</span>
-    </button>
-  </div>
-  <div class="modal-body">
-    
-
-    <form method="post">
-      <div class="mb-3">
-        <select class="form-select" aria-label="Default select example" name="type">
-          <option selected disabled>Type d'annonce</option>
-          <option value="1">Demande de service</option>
-          <option value="2">Proposition de service</option>
-        </select>
-      </div>
-      <div class="mb-3">
-        <label for="message-text" class="col-form-label">Titre:</label>
-        <input type="text" class="form-control" id="recipient-name" name="titre">
-      </div>
-      <div class="mb-3">
-        <label for="message-text" class="col-form-label">Message:</label>
-        <textarea class="form-control" id="message-text" name="message"></textarea>
-      </div>
-    </form>
-
-
-  </div>
-  <div class="modal-footer">
-    <button type="button" class="btn btn-outline-dark" (click)="c('Save click')">Enregistrer</button>
-  </div>
-</ng-template>
 

@@ -47,6 +47,13 @@
 		color: black;
 	}
 
+	label {
+		color: red;
+		font-weight: 600;
+		font-size: 3px;
+	}
+
+
 }
 
 
@@ -98,6 +105,14 @@
 		text-decoration: none;
 		color: black;
 	}
+
+	label {
+		color: red;
+		font-weight: 300;
+		font-size: 15px;
+		font-style: italic;
+	}
+
 
 }
 

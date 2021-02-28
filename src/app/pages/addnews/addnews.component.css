@@ -1,0 +1,47 @@
+@media only screen and (min-width: 751px){
+	/* desktop and tablet device */
+
+	.send {
+		float: right;
+	}
+
+	label {
+		font-weight: 600;
+	}
+
+	.titre {
+		text-decoration: none;
+		color: black;
+	}
+
+	#title {
+		margin: 0 auto;
+		text-align: center;
+		font: italic 600 60px Times, Times New Roman, serif;
+	}
+
+}
+
+@media only screen and (max-width: 750px){
+	/* mobile device */
+
+	.send {
+		float: right;
+	}
+
+	label {
+		font-weight: 600;
+	}
+
+	.titre {
+		text-decoration: none;
+		color: black;
+	}
+
+	#title {
+		margin: 0 auto;
+		text-align: center;
+		font: italic 600 40px Times, Times New Roman, serif;
+	}
+
+}

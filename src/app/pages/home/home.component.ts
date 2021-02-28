@@ -4,6 +4,11 @@ import { NgbModalConfig, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { faPlus } from '@fortawesome/free-solid-svg-icons';
 
+import { CookieService } from 'ngx-cookie';
+
+import { Router } from '@angular/router';
+
+
 
 @Component({
   selector: 'app-home',
@@ -15,18 +20,21 @@ export class HomeComponent implements OnInit {
 	faSearch = faSearch;
 	faPlus = faPlus;
 
-	
+	cookie = this.cookieService.get('infos');
 
-  constructor(private modalService: NgbModal, config: NgbModalConfig) {
-  	config.backdrop = 'static';
-  	config.keyboard = false;
+  constructor(private cookieService: CookieService, private route: Router) {
+
+
   }
 
-  ngOnInit(): void {
+  ngOnInit(): void {}
+
+  
+  nextpage(){
+    this.route.navigate(['addnews']);
   }
 
-   open(content: any) {
-    this.modalService.open(content);
-   }
+
+
 
 }
